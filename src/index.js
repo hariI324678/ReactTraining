@@ -5,7 +5,7 @@ import { render } from "react-dom";
 ////import "jquery";
 //import "bootstrap";
 //import "bootstrap/dist/css/bootstrap.css";
-import configureStore from "./Store/CreateStore";
+import configureStore from "./store/CreateStore";
 import { Provider } from "react-redux"; //We"ll use the Redux Provider to make the store available to any components that we choose to connect to it.
 import { Router, Route, IndexRoute, browserHistory } from "react-router";
 
