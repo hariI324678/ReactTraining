@@ -1,17 +1,41 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+/* import React from "react";
+import {connect} from "react-redux";
+import { bindActionCreators } from "redux";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="fgChatContainer">
-        <p>
-          MyChat APp
-        </p>
-      </div>
-    );
-  }
+class App extends React.Component {
+    componentWillMount() {
+        if(this.props.login.verifiedPin !== true) {
+            this.props.logout();
+            this.props.router.push("/login");
+            return false;
+        }
+        return true;
+    }
+
+    render() {
+        if(this.props.login.verifiedPin !== true) {return null;}
+
+        return (
+            <div className="fgAppContainer">
+                {this.props.children}
+                <div className="fgLoading" style={bgImg} id="fgLoading" />
+            </div>
+        );
+        
+    }
 }
 
-export default App;
+const mapStateToProps = (state) => {
+    return {
+        login: state.login,
+    };
+};
+
+const mapDispatchToProps = (dispatch) => {
+    return bindActionCreators({
+        logout: LoginActions2.logout
+    }, dispatch);
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
+ */

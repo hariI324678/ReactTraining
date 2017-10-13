@@ -3,7 +3,7 @@ import thunk from "redux-thunk";
 import createLogger from "redux-logger";
 import {composeWithDevTools} from "redux-devtools-extension";
 import { combineReducers } from "redux";
-import reducersAndInitializers from "../Reducers/Reducers";
+import reducersAndInitializers from "../reducers/Reducers";
 
 const getInitializersAndReducers = (config) => {
     var initializers = [];

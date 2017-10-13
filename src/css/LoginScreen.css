@@ -1,0 +1,11 @@
+
+.fgFullWidth {
+    width: 100%;
+}
+.fgNoFloat {
+    float: none !important;
+}
+.input-group.input-group-lg > .fgLargeInput {
+    font-size: 15px;
+    height: 38px;
+}

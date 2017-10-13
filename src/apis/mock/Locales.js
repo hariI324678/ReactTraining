@@ -1,0 +1,21 @@
+export default [
+    { "key": "de_DE", "value": "Deutsch (Deutschland)" },
+    { "key": "en_GB", "value": "English (United Kingdom)" },
+    { "key": "en_US", "value": "English (United States)" },
+    { "key": "es_MX", "value": "Español (México)" },
+    { "key": "fr_CA", "value": "Français (Canada)" },
+    { "key": "fr_FR", "value": "Français (France)" },
+    { "key": "it_IT", "value": "Italiano (Italia)" },
+    { "key": "nl_NL", "value": "Nederlands (Nederland)" },
+    { "key": "pl_PL", "value": "Polski (Polska)" },
+    { "key": "pt_BR", "value": "Português (Brasil)" },
+    { "key": "pt_PT", "value": "Português (Europeu)" },
+    { "key": "sv_SE", "value": "Svenska (Sverige)" },
+    { "key": "mn_XC", "value": "Монгол (Монгол Улс)" },
+    { "key": "ru_RU", "value": "Русский (Россия)" },
+    { "key": "iw_IL", "value": "עברית (ישראל)" },
+    { "key": "zh_TW", "value": "中文 (繁體)" },
+    { "key": "zh_CN", "value": "中文(简体)" },
+    { "key": "ja_JP", "value": "日本語（日本）" },
+    { "key": "ko_KR", "value": "한국어(대한민국)" }
+];

@@ -2,28 +2,37 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { render } from "react-dom";
 
-import { Router, Route, IndexRoute, hashHistory } from "react-router";
-import "jquery";
+////import "jquery";
 //import "bootstrap";
 //import "bootstrap/dist/css/bootstrap.css";
 import configureStore from "./Store/CreateStore";
 import { Provider } from "react-redux"; //We"ll use the Redux Provider to make the store available to any components that we choose to connect to it.
+import { Router, Route, IndexRoute, browserHistory } from "react-router";
 
 import './index.css';
-import App from './App';
 import registerServiceWorker from './registerServiceWorker';
+
+
+//Containers Start here 
+import LoginScreenContainer from "./containers/LoginScreenContainer";
+import NavContainer from "./containers/NavContainer";
+import ContactsScreenContainer from "./containers/ContactsScreenContainer";
+import ChatScreenContainer from "./containers/ChatScreenContainer";
 
 const store = configureStore();
 
 render(
-    <Provider store={store}>
-        <Router onUpdate={() => window.scrollTo(0, 0)} history={hashHistory}>
-            <Route path="/" component={App} >
-                <IndexRoute component={App} />
-            </Route>
-        </Router>
+        <Provider store={store}>
+            <Router history={browserHistory}>
+                <Route component={NavContainer} >
+                    <Route path="/" component={LoginScreenContainer} />
+                    <Route path="/contacts" component={ContactsScreenContainer} />
+                    <Route path="/chat" component={ChatScreenContainer} />
 
-    </Provider>, document.getElementsByClassName("fgChatHolder")[0]
+                </Route>
+            </Router>
+        </Provider>
+    , document.getElementsByClassName("fgChatHolder")[0]
 );
 
 
